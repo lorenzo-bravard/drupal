@@ -44,18 +44,21 @@
 #}
 <div class="layout-container">
 
-  <header class="py-3 border-bottom border-2 border-warning bg-light "  role="banner">
+  <header class="py-3 border-bottom border-2 border-warning bg-light"  role="banner">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           {{ page.header }}
         </div>
-        <div class="col-md-4">
+        <div class="mutliCollapse col-md-4 collapse d-lg-block">
             {{ page.primary_menu }}
         </div>
-        <div class="border border-end-0 border-bottom-0 border-top-0 col-md-2">
+        <div class="mutliCollapse border border-end-0 border-bottom-0 border-top-0 col-md-2 collapse d-lg-block">
           {{ page.secondary_menu }}
         </div>
+      </div>
+      <div class="d-lg-none">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".mutliCollapse" aria-controls="mutliCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
       </div>
       
     </div>
@@ -96,7 +99,6 @@
     </div>
   </main>
 
-{{ page.footer_first }}
   {% if page.footer %}
     <footer role="contentinfo">
       
