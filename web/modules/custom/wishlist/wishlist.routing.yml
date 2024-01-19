@@ -1,0 +1,7 @@
+wishlist.content:
+  path: '/creation-wishlist' 
+  defaults: 
+    _controller: '\Drupal\wishlist\Controller\CreateWishlistController::content' 
+    _title: 'Hello World'
+  requirements: 
+    _permission: 'access content' 

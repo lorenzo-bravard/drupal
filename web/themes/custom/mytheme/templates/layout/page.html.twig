@@ -46,21 +46,23 @@
 
   <header class="py-3 border-bottom border-2 border-warning bg-light"  role="banner">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          {{ page.header }}
+      <div class="container row ">
+        <div class="row">
+          <div class="col-md-4 col-lg-1">
+            {{ page.header }}
+          </div>
+          <div class="mutliCollapse col-md-6 col-lg-7  collapse d-lg-block">
+              {{ page.primary_menu }}
+          </div>
+          <div class="mutliCollapse border border-end-0 border-bottom-0 border-top-0 col-md-3 collapse d-lg-block">
+            {{ page.secondary_menu }}
+          </div>
         </div>
-        <div class="mutliCollapse col-md-4 collapse d-lg-block">
-            {{ page.primary_menu }}
+        <div class="col-md-3 d-lg-none">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".mutliCollapse" aria-controls="mutliCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
         </div>
-        <div class="mutliCollapse border border-end-0 border-bottom-0 border-top-0 col-md-2 collapse d-lg-block">
-          {{ page.secondary_menu }}
-        </div>
+        
       </div>
-      <div class="d-lg-none">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".mutliCollapse" aria-controls="mutliCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
-      </div>
-      
     </div>
     
     
