@@ -72,9 +72,17 @@
 
 
   {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
+ {% if page.highlighted %}
+    <div class="highlighted-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            {{ page.highlighted }}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
   {{ page.help }}
 
   <main role="main">

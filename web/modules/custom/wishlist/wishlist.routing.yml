@@ -5,3 +5,10 @@ wishlist.content:
     _title: 'Hello World'
   requirements: 
     _permission: 'access content' 
+wishlist.popin_scrap_form:
+  path: '/wishlist/popin-scrap'
+  defaults:
+    _title: 'Popin Scrap'
+    _form: 'Drupal\wishlist\Form\PopinScrapForm'
+  requirements:
+    _permission: 'create wishlist_item_produit_ content'

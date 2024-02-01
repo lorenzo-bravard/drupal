@@ -80,7 +80,8 @@
 {{ attach_library('mytheme/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-<a class="btn-primary" href="/node/add/wishlist_item_produit_">Ajouter un produit</a>
+{{ attach_library('code/drupal.dialog.ajax')}}
+<a class="btn-primary use-ajax" data-dialog-type="modal" href="/wishlist/popin-scrap?wid={{ node.id() }}">Ajouter un produit</a>
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>

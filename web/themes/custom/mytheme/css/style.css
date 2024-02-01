@@ -23,14 +23,47 @@ img{
     height: auto;
 }
 
+.view-prouct-homepage{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlighted-wrapper{
+    background: url('../images/bg-head-home.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.highlighted-wrapper .container{
+    padding: 40px 0;
+}
+.highlighted-wrapper a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.contextual-region{
+    position: static;
+}
 @media (min-width: 769px) {
     .menu-item{
         border: none !important;
     }
     .menu{
         display: flex !important;
-        flex-direction: row;
+        flex-direction: row;    
         justify-content: flex-end;
 
     }
+    .view-prouct-homepage .view-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .view-id-prouct_homepage .views-row{
+        margin: 10px;
+        padding: 10px;
+    }
 }
+
